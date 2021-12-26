@@ -1,0 +1,41 @@
+* {
+    text-align: center;
+}
+
+body {
+    background-color: #2E4C6D;
+    width: 900px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+header {
+    background-color: #396EB0;
+    height: 50px;
+    padding: 20px;
+}
+
+.content {
+    width: inherit;
+}
+
+.pull-left {
+    background-color: #DADDFC;
+    float: left;
+    width: 20%;
+    height: 200px;
+}
+
+.pull-right {
+    background-color:#C7B198;
+    float: right;
+    width: 70%;
+    height: 200px;
+}
+
+footer {
+    clear: both;
+    background-color: #FC997C;
+    height: 50px;
+    padding: 20px;
+}
