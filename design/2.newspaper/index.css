@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    background-color: #DDDEDD;
+    height: 20px;
+    vertical-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    padding: 10px;
+    vertical-align: center;
+    margin: auto;
+    text-align: center;
+}
+
+.center {
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.date {
+    color: grey;
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.nav2 {
+    background-color: rgb(49,136,203);
+}
+
+.nav2 a {
+    color: white;
+}
+
+.row {
+    width: 75%;
+    margin: auto;
+}
+
+.republica-watch-heading {
+    margin-top: 20px;
+    background-color: rgb(49,136,203);
+    color: white;
+    padding: 10px;
+}
+
+.column {
+    float: left;
+    width: 31%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.news {
+    width: 75%;
+    margin: auto;
+    border: 2px solid rgb(236, 234, 234);
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.news-heading {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.news img {
+    max-width: 100%;
+}
+
+.news h3 {
+    color: gray;
+    margin: 10px;
+}
+
+.news h5 {
+    font-style: italic;
+}
+
+.news img {
+    object-fit: cover;
+    align-items: center;
+}
+
+.special {
+    display: inline;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(237,28,36);
+    color: white;
+}
+
+.explore {
+    background-color: rgb(20,136,202);
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer h2 {
+    color: rgb(167,234,241);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+footer table {
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+footer td {
+    padding-right: 70px;
+}
+
+.copyright {
+    text-align: center;
+    margin: 10px;
+    color: gray;
+}
