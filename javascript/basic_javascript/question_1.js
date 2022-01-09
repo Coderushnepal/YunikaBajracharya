@@ -1,13 +1,4 @@
-/*
-Write a function to render the following pattern in the console:
-* * * * *
-* * * *
-* * *
-* *
-*
-
-The function needs to take a number as a parameter which represents how many asterisks are rendered on the first row.
-*/
+// Simple pattern
 
 function pattern(num) {
     let output = "";

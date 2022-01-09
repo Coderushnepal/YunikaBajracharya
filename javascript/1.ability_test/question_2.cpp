@@ -1,4 +1,4 @@
-// Find the Smallest and Biggest Numbers. Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
+// Finding Minimum and Maximum numbers
 
 #include <iostream>
 using namespace std;
