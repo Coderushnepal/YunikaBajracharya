@@ -311,7 +311,10 @@
 
 .facilities_content {
     margin-top: 30px;
-    /* margin-bottom: 50px; */
+}
+
+.facilities_title_tablet {
+    display: none;
 }
 
 .facilities_content ul {
@@ -538,6 +541,10 @@
     margin-right: 85.99px;
 }
 
+.companies_logo img {
+    margin-left: 85.99px;
+}
+
 .blog {
     /* border: 2px solid green; */
     margin-top: 80px;
@@ -755,7 +762,7 @@
 
 /*******************mobile view**************************/
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     
     .container {
         max-width: 375px;
@@ -910,7 +917,6 @@
     .facilities_content img {
         display: none;
     }
-    /*******Facilities Ends*******/
 
     /*******Location Begins*******/
     .location {
@@ -955,7 +961,6 @@
         margin-bottom: 49px;
         margin-left: 20px;
     }
-    /*******Location Ends*******/
 
     /*******Feedback Begins*******/
     .feedback {
@@ -1018,10 +1023,12 @@
     .companies_logo {
         margin-left: 90.8px;
         margin-top: 10px;
+        text-align: center;
     }
 
     .companies_logo img {
         margin-top: 32px; 
+        margin-left: -20px;
     }
 
     .blog {
@@ -1096,4 +1103,309 @@
 .footer_wrapper {
     display: none;
 }
+}
+
+/******************************tablet view**************************/
+
+@media only screen and (max-width: 1023px) and (min-width: 768px){
+    .container {
+        max-width: 834px;
+    }
+    
+    /*******Header Begins*******/
+    .hamburger {
+        float: left;
+        display: inline-block;
+        margin-top: 26.46px;
+        margin-left: 32px;
+    }
+
+    .logo {
+        margin: 14px 33px 33px 290.7px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header {
+        border: none;
+    }
+    
+    /*******Introduction Begins*******/
+    .wrapper {
+        margin-top: 37px;
+    }
+
+    .introduction_image img{
+        width: 370px;
+        height: 293px;
+        margin-left: 32px;
+        margin-right: 0px;
+    }
+    
+    .introduction_content {
+        width: 367px;
+        margin: 0px 32px 0px 5px;
+    }
+    
+    .introduction_content h1 {
+        font-size: 27px;
+        line-height: 36px;
+        margin-top: 0px;
+        margin-bottom: 16px;
+        width: 341px;
+        height: 108px;
+    }
+
+    .introduction_content p {
+        width: 367px;
+        height: 104px;  
+        line-height: 26px;
+        margin-bottom: 16px;
+    }
+
+    .colored-button {
+        margin-right: 0px;
+    }
+    
+    .simple-button {
+        float: right;
+        margin: 0px 0px;
+    }
+    
+    /*******Browse Begins*******/
+    .browse {
+        margin: 48px 0px 0px 32px;
+    }
+    
+    .browse_content h1 {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    
+    .browse_text_tablet {
+        display: none;
+    }
+    
+    .browse_text_mobile {
+        display: block;
+        margin-top: 20px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #667580;
+    }
+    
+    .browse_cards {
+        margin-top: 40px;
+    }
+    
+    .card-1 {
+        width: 244px;
+        height: 201px;
+        margin-right: 20px;
+    }
+
+    .card-1 img {
+        width: 244px;
+        height: 138px;
+    }
+    
+    .card-2 {
+        width: 244px;
+        height: 201px;
+        margin-right: 20px;
+        padding: 8px 14px 20px 14px;
+    }
+    
+    .card-2_text {
+        width: 215px;
+        height: 65px;   
+        margin-bottom: 30px; 
+    }
+    
+    .card-3 {
+        width: 244px;
+        height: 201px;
+    }
+
+    .card-3 img {
+        width: 244px;
+        height: 138px;
+    }
+    
+    /*******Facilities Begins*******/
+    .facilities {
+        margin: 48px 29.63px 62px 32px;
+    }
+
+    .facilities_title_desktop {
+        display: none;
+    }
+    
+    .facilities_title_tablet {
+        display: block;
+    }
+
+    .facilities_text_desktop {
+        display: none;
+    }
+
+    .facilities_content {
+        margin-top: 20px;
+    }
+
+    .facilities_content ul a li{
+        font-size: 20px;
+    }
+    
+    .facilities_content img {
+        float: right;
+        width: 401px;
+        height: 240px;
+    }
+    
+    /*******Location Begins*******/
+    .location {
+        margin-top: 0px;
+    }
+    
+    .map_desktop {
+        width: 394px;
+        height: 153px;
+        margin-top: 97px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .location_content {
+        width: 331px;
+        float: left;
+        margin: 40px 16px 40px 28px;
+    }
+    
+    .location_content h1 {
+        font-size: 27px;
+        line-height: 35px;
+        margin-top: 0px;
+    }
+    
+    .location_content p {
+        line-height: 26px;
+        color: #667580;
+        margin-bottom: 44px;
+        margin-top: 20px;
+    }
+    
+    /*******Feedback Begins*******/
+    .feedback {
+        margin: 48px 0px 0px 32px;
+    }
+    
+    .feedback_card-3 {
+        display: none;
+    }
+    /*******Feedback Ends*******/
+    
+    .companies {
+        margin: 74.98px 42px 0px 43px;
+    }
+
+    .companies p {
+        margin-bottom: 60px;
+    }
+    
+    .companies_logo {
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    .companies_logo img {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+    
+    .blog {
+        margin: 80px 30px 100px 32px;
+    }
+    
+    .trends_title_mobile {
+        display: none;
+    }
+    
+    .blog_cards {
+        margin-top: 40px;
+    }
+
+    .blog_card-1 {
+        width: 220px;
+        height: 315px;
+    }
+
+    .blog_card-1 img{
+        width: 220px;
+        height: 159px;
+    }
+
+    .blog_card_bottom h4 {
+        font-size: 18px;
+    }
+
+    .card-1-2 {
+        display: none;
+    }
+
+    .blog_card-3 {
+        display: none;
+    }
+
+    .footer {
+        margin-top: 0px;
+    }
+    
+    .address {
+        float: left;
+        margin: 40px 0px 0px 32px;
+    }
+    
+    .links_section {
+        float: left;
+        border-bottom: 1px solid #667580;
+        margin-top: 90.9px;
+        padding-bottom: 118.91px;
+        padding-left: 55px;
+    }
+    
+    .links {
+        display: none;
+    }
+    
+    .connect {
+        margin-top: 117px;
+        margin-right: 32px;
+    } 
+    
+    .createdby-mobile{
+        display: block;
+        float: left;
+        border-top: 1px solid;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: #667580;
+        margin: 90px 30px 50px 35px;
+        padding-top: 19.9px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .footer_wrapper {
+        display: none;
+    }
 }
