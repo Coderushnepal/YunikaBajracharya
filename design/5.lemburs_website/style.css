@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');  
 
 * {
@@ -15,6 +15,10 @@
 /*******Header Begins*******/
 .header {
     border-bottom: 2px solid black;
+}
+
+.hamburger {
+    display: none;
 }
 
 .logo {
@@ -153,6 +157,9 @@
     margin-bottom: 70px;
 }
 
+.mobile {
+    display: none;
+}
 .colored-button {
     align-items: center;
     padding: 5px 20px;
@@ -225,8 +232,11 @@
     color: #667580;
 }
 
+.browse_text_mobile {
+    display: none;
+}
+
 .browse_cards {
-    /* border: 2px solid red; */
     margin-top: 40px;
 }
 
@@ -244,10 +254,10 @@
     color: white;
     padding-bottom: 35px;
 }
+
 .card-left {
     width: 89px;
-    height: 22px;
-    
+    height: 22px;  
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -271,15 +281,12 @@
 
 .card-2_text {
     width: 292px;
-    height: 52px;
-    
+    height: 52px;   
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 13px;
-    /* or 13px */
-    
     text-align: center;
     color: #C2C2C2;
     margin-bottom: 30px;  
@@ -344,7 +351,7 @@
     background: #F7F7F7;
 }
 
-.location-image img {
+.map_desktop {
     float: left;
     width: 810px;
     height: 315px;
@@ -352,6 +359,10 @@
     margin-left: 20px;
     margin-bottom: 63px;
     /* border: 2px solid black; */
+}
+
+.map_mobile {
+    display: none;
 }
 
 .location_content {
@@ -404,6 +415,24 @@
 }
 
 .feedback_card {
+    float: left;
+    width: 370px;
+    height: 260px;
+    margin-right: 24px;
+    align-items: center;
+    padding: 41px 30px 0 35px;
+    background: #334756;
+}
+
+.quotes {
+    opacity: 0.5; 
+    float: left; 
+    position: absolute; 
+    margin-top: -24px; 
+    margin-left: -10px
+}
+
+.feedback_card2 {
     float: left;
     width: 370px;
     height: 260px;
@@ -467,6 +496,10 @@
     line-height: 17px;
     color: #FFFFFF;
 }
+
+.swipe {
+    display: none;
+}
 /*******Feedback Ends*******/
 
 .companies {
@@ -510,6 +543,10 @@
     margin-top: 80px;
     margin-left: 149px;
     margin-right: 116px;
+}
+
+.trends_title_mobile {
+    display: none;
 }
 
 .blog_cards {
@@ -685,6 +722,10 @@
     text-align: center;
 }
 
+.createdby-mobile {
+    display: none;
+}
+
 .connect {
     /* border: 2px solid black; */
     float: right;
@@ -710,4 +751,349 @@
 .footer_wrapper {
     float: left;
     /* border: 2px solid red; */
+}
+
+/*******************mobile view**************************/
+
+@media screen and (max-width: 767px) {
+    
+    .container {
+        max-width: 375px;
+    }
+
+    .hamburger {
+        float: left;
+        display: inline-block;
+        margin-top: 26.46px;
+        margin-left: 25.63px;
+    }
+
+    .logo {
+        margin: 14px 33px 33px 72.7px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header {
+        border: none;
+    }
+
+    /*******Introduction Begins*******/
+    .wrapper {
+        /* border: 2px solid yellow; */
+        margin-top: 0px;
+    }
+
+    .introduction {
+        /* border: 2px solid brown; */
+    }
+
+    .introduction_image img{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .introduction_content {
+        /* border: 2px solid red; */
+        width: 334px;
+        margin: 32px 20px 40px 21px;
+    }
+
+    .introduction_content h1 {
+        font-size: 27px;
+        line-height: 36px;
+        width: 334px;
+        height: 108px;
+        margin-top: 0px;
+    }
+
+    .introduction_content p {
+        display: none;
+    }
+
+    .introduction_content .mobile {
+        display: block;
+        margin-bottom: 50px;
+        line-height: 26px;
+    }
+
+    .colored-button {
+        margin-top: 20px;
+        width: 335px;
+        margin-right: 0px;
+    }
+
+    .simple-button {
+        width: 335px;
+        margin: 20px 0px;
+    }
+    /*******Introduction Ends*******/
+
+    /*******Browse Begins*******/
+    .browse {
+        margin: 0px;
+        padding: 32px 20px 25.18px 20px;
+        background: #F6F6F6;
+    }
+
+    .browse_content {
+        /* border: 2px solid gray; */
+    }
+
+    .browse_content h1 {
+        font-size: 27px;
+        line-height: 36px;
+        margin-bottom: 12px;
+    }
+
+    .browse_content p {
+        display: none;
+    }
+
+    .browse_content .browse_text_mobile {
+        display: inline;
+        line-height: 26px;
+    }
+
+    .browse_cards {
+        margin-top: 20px;
+    }
+
+    .card-1 {
+        width: 325px;
+    }
+
+    .card-1 img {
+        width: 325px;
+    }
+
+    .card-2 {
+        width: 325px;
+        margin-top: 24px;
+        padding: 20px;
+    }
+
+    .card-3 {
+        width: 325px;
+        margin-top: 24px;
+    }
+
+    .card-3 img {
+        width: 325px;
+    }
+    /*******Browse Ends*******/
+
+    /*******Facilities Begins*******/
+    .facilities {
+        /* border: 2px solid blue; */
+        margin: 20px;
+        margin-top: 40px;
+    }
+
+    .facilities_text_mobile {
+        margin-right: 19px;
+    }
+
+    .facilities_content ul {
+        float: none;
+    }
+
+    .facilities_content ul a li{
+        float: none;
+        display: block;
+        margin-left: -20px;
+        margin-right: 18px;
+    }
+
+    .facilities_content img {
+        display: none;
+    }
+    /*******Facilities Ends*******/
+
+    /*******Location Begins*******/
+    .location {
+        /* border: 2px solid pink; */
+        margin-top: 66px;
+    }
+
+    .location_content {
+        /* border: 2px solid red; */
+        float: none;
+        width: 335px;
+        margin-right: 20px;
+        margin-top: 0px;
+        margin-left: 20px;
+        padding-top: 2px;
+    }
+
+    .location_content h1 {
+        font-size: 27px;
+        line-height: 35px;
+        margin-top: 40px;
+    }
+
+    .location_content p {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .map_desktop {
+        display: none;
+    }
+
+    .map_mobile {
+        display: block;
+        width: 330px;
+        height: 146px;
+        margin-left: 0px;
+        margin-bottom: 33px;
+    }
+
+    .location_explore {
+        margin-bottom: 49px;
+        margin-left: 20px;
+    }
+    /*******Location Ends*******/
+
+    /*******Feedback Begins*******/
+    .feedback {
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .feedback_card {
+        width: 330px;
+    }
+
+    .feedback_card2 {
+        display: none;
+    }
+
+    .feedback_card-3 {
+        display: none;
+    }
+
+    .feedback_card_bottom-card2 {
+        border: 2px solid white;
+        margin-top: 73px;
+        display: none;
+    }
+
+    .swipe {
+        margin-top: 28.98px;
+        display: block;
+        font-family: Lato;
+        font-size: 20px;
+        line-height: 24px;
+        color: #086DE0;
+    }
+    /*******Feedback Ends*******/
+
+    .companies {
+        /* border: 2px solid red; */
+        margin-top: 80px;
+        margin-left: 0px;
+        margin-right: 0px;
+        background: #F6F6F6;
+        padding-bottom: 28px;
+        padding-top: 20px;
+    }
+
+    .companies_heading {    
+        font-size: 27px;
+        line-height: 36px;
+        text-align: left;
+        margin: 28px 16px 0px 24px;
+    }
+
+    .companies_para {
+        line-height: 26px;
+        text-align: left;
+        margin: 12px 16px 0px 24px;
+    }
+
+    .companies_logo {
+        margin-left: 90.8px;
+        margin-top: 10px;
+    }
+
+    .companies_logo img {
+        margin-top: 32px; 
+    }
+
+    .blog {
+        margin: 40px 20px 0px 20px;
+    }
+
+    .trends_title_desktop {
+        display: none;
+    }
+
+    .trends_title_mobile {
+        display: inline;
+    }
+
+    .blog_cards {
+        margin-top: 20px;
+    }
+
+    .blog_card-1 {
+        width: 325px;
+    }
+
+    .blog_card-1 img{
+        width: 325px;
+    }
+
+    .card-1-2 {
+        display: none;
+    }
+
+    .blog_card-3 {
+        display: none;
+    }
+
+.footer {
+    background: #F7F7F7;
+    margin-top: 35px;
+}
+
+.address {
+    margin: 40px 0px 0px 20px;
+}
+
+.links {
+    display: none;
+}
+
+.createdby-mobile{
+    display: block;
+    float: left;
+    border-top: 1px solid ;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #667580;
+    margin: 40px 41px 50px 20px;
+    padding-top: 19.9px;
+}
+
+.connect {
+    float: left;
+    margin-top: 28px;
+    margin-left: -10px;
+}
+
+.connect p {
+    display: none;
+}
+
+.footer_wrapper {
+    display: none;
+}
 }

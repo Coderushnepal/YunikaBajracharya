@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,11 +20,10 @@
     <div class="container">
 
         <div class="header clearfix">
-
-            <div class="logo">
-                <h1>Lemburs</h1>
+            <div class="navbar">
+                <a href="#" class="hamburger"><i class="fas fa-bars fa-2x"></i></a>
+                <h1 class="logo">Lemburs</h1>
             </div>
-
             <div class="nav clearfix">
                 <div class="navlist">
                     <ul>
@@ -55,6 +53,7 @@
                 </div>
                 <div class="introduction_content">
                     <h1>A revolutionary<br><span class="special-text">co-working space</span> to<br>find the best innovations</h1>
+                    <p class="mobile">In frispes, we spearhead new initiatives and<br>provide mentorship to a new startup, and help<br>grow their opportunities in key local, regional and<br>global markets</p>
                     <p>In frispes, we spearhead new initiatives and provide<br>mentorship to a new startup, and help grow their<br>opportunities in key local, regional and global markets</p>
                     <div class="introduction_button">
                         <button class="colored-button">
@@ -73,7 +72,10 @@
                         Browse by Workspace
                     </h1>
                     <p>
-                        For companies of all sizes, WeWork provides global scale facilities and<br>flexibility to help your business adapt to uncertainty. Find the right<br> space for you.
+                        For companies of all sizes, WeWork provides global scale facilities and<br>flexibility to help your business adapt to uncertainty. Find the right<br>space for you.
+                    </p>
+                    <p class="browse_text_mobile">
+                        For companies of all sizes, WeWork provides global scale facilities and flexibility to help your business adapt to uncertainty. Find the right space for you.
                     </p>
                 </div>
                 <div class="browse_cards clearfix">
@@ -98,7 +100,7 @@
                             </span>
                         </div>
                         <p class="card-2_text">
-                            a personal computer intended for general use at a<br>location as opposed to a laptop or portable computer.<br>... This type of computer is designed to be placed and<br>used on a desk in the home or office
+                            a personal computer intended for general use at a<br>location as opposed to a laptop or portable computer.<br>...This type of computer is designed to be placed and<br>used on a desk in the home or office
                         </p>
                     </div>
                     <div class="card-3">
@@ -121,7 +123,10 @@
                         All facilities are designed<br>to meet all your <span class="special-text">needs</span>
                     </h1>
                     <p>
-                        For companies of all sizes, WeWork provides global scale facilities and<br>flexibility to help your business adapt to uncertainty. Find the right<br> space for you.
+                        During the COVID-19 pandemic, for your convenience we are<br>improving our facilities at some stage so as not to hamper your<br>productivity
+                    </p>
+                    <p class="browse_text_mobile facilities_text_mobile">
+                        During the COVID-19 pandemic, for your<br>convenience we are improving our facilities at<br>some stage so as not to hamper your<br>productivity
                     </p>
                 </div>
                 <div class="facilities_content clearfix">
@@ -137,11 +142,12 @@
 
             <div class="location clearfix">
                 <div class="location-image">
-                    <img src="img/map.png" alt="map">
+                    <img src="img/map.png" alt="map" class="map_desktop">
                 </div>
                 <div class="location_content">
                     <h1>Workspace <span class="special-text">where</span> and<br>how you need it</h1>
                     <p>We are around you to make it easier for you to<br>reach, to increase productivity and help your<br>dreams come true</p>
+                    <img src="img/map_mobile.png" alt="map" class="map_mobile">
                     <div class="location_explore">
                         Explore location<i class="fas fa-long-arrow-alt-right" style="margin-left: 20px;;"></i>
                     </div>
@@ -156,6 +162,7 @@
                 </div>
                 <div class="browse_cards clearfix">
                     <div class="feedback_card">
+                        <img src="img/quotes.png" alt="" class="quotes">
                         <p class="feedback-text">
                             I think the service is very good, all the facilities are as shown, what's more
                         </p>
@@ -167,7 +174,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="feedback_card">
+                    <div class="feedback_card2">
+                        <img src="img/quotes.png" alt="" class="quotes">
                         <p class="feedback-text">
                             I feel comfortable and safe when I'm there because I really pay attention to the health protocols that apply
                         </p>
@@ -180,6 +188,7 @@
                         </div>
                     </div>                    
                     <div class="feedback_card-3">
+                        <img src="img/quotes.png" alt="" class="quotes">
                         <p class="feedback-text">
                             the arrangement is cool, what an amazing place
                         </p>
@@ -191,6 +200,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="swipe">
+                    Swipe<i class="fas fa-long-arrow-alt-right" style="margin-left: 20px;;"></i>
                 </div>
             </div>
 
@@ -209,8 +221,11 @@
 
             <div class="blog">
                 <div class="browse_content clearfix">
-                    <h1>
+                    <h1 class="trends_title_desktop">
                         <span class="special-text">Trends</span> and <span class="special-text">insights</span> at work
+                    </h1>
+                    <h1 class="trends_title_mobile">
+                        <span class="special-text">Trends</span> and<br><span class="special-text">insights</span> at work
                     </h1>
                 </div>
                 <div class="blog_cards clearfix">
@@ -222,7 +237,7 @@
                         </div>
                     </div>
 
-                    <div class="blog_card-1">
+                    <div class="blog_card-1 card-1-2">
                         <img src="img/blog_img1.png" alt="browse-img">
                         <div class="blog_card_bottom">
                             <h4>What should we do to make a startup ? </h4>
@@ -316,8 +331,9 @@
                     <i class="fab fa-instagram"></i>
                 </div>
             </div>
-        </div>
-        
+ 
+        <div class="createdby-mobile">Landing Page - Lemburs Created By <b>Mickwaz</b></div>
+    </div>
     </div>
 </body>
 
