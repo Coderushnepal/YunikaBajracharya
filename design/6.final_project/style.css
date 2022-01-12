@@ -15,13 +15,14 @@
 
 .header {
     /* border: 2px solid black; */
-    background: #F7F7F7;
     width: 100%;
-    padding: 36px;
+    background-image: url("img/background_mobile.png");
 }
 
 .navbar {
     /* border: 2px solid green; */
+    background: #F7F7F7;
+    padding: 36px;
     width: 100%;
 }
 
@@ -69,19 +70,29 @@ ul {
     margin-top: 96px;
 }
 
-/* .nav_list h2 {
+.quote_navbar {
+    display: none;
+}
+
+.nav_list li {
     margin-bottom: 30px;
-    text-align: center;
     font-weight: normal;
     font-size: 30px;
     line-height: 45px;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.2px; 
+}
+
+.nav_list li a {
+    text-decoration: none;
     color: #737373;
-} */
+}
+
+.nav_list li a:hover {
+    color: #2c2a2a;
+}
 
 .intro_section {
     /* border: 2px solid orange; */
-    background-image: url("img/background_mobile.png");
     padding-bottom: 105px;
 }
 
@@ -212,7 +223,7 @@ button:hover {
 .services_box {
     width: 328px;
     height: 385px;
-    margin: auto;
+    margin-left: 42px;
     background: #D9EDFF;
     background: #D9EDFF;
     border-radius: 10px;
@@ -255,6 +266,15 @@ button:hover {
     letter-spacing: 0.2px;   
     color: #737373;
     margin-bottom: 5px;
+}
+
+.services_box_text ul li a {
+    text-decoration: none;
+    color: #23A6F0;
+}
+
+.services_box_text ul li a:hover {
+    color: #114563;
 }
 
 /********** Services Section *********/
@@ -325,13 +345,17 @@ button:hover {
     text-align: left;
 }
 
-.faq_box_text {
+.faq_box_text_mobile {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.2px;
     color: #737373;
     text-align: left;
+}
+
+.faq_box_text_desktop {
+    display: none;
 }
 
 /********** Newsletter Section *********/
@@ -350,8 +374,13 @@ button:hover {
     margin-bottom: 30px;
 }
 
+.subscribe_email_box {
+    text-align: center;
+    margin: auto;
+}
+
 .newsletter_box {
-    padding: 15px 0px 15px 20px;
+    padding: 15px 100px 15px 20px;
     text-align: left;
     float: left;
     position: relative;
@@ -359,13 +388,17 @@ button:hover {
     border-bottom-left-radius: 5px;
 }
 
+.newsletter_content_desktop {
+    display: none;
+}
+
 .subscribe {
+    float: right;
     background: #23A6F0;
-    border: 1px solid #E6E6E6;
     border-radius: 0px 5px 5px 0px;
-    padding: 9.5px 22.5px;
+    padding: 8.5px 14px;
     position: absolute;
-    margin-left: -58px;
+    margin-left: -100px;
     margin-top: 1px;
     font-weight: normal;
     font-size: 14px;
@@ -454,4 +487,238 @@ button:hover {
     line-height: 24px;
     letter-spacing: 0.2px;
     color: #737373;
+}
+
+/**************** Desktop View ****************/
+
+@media only screen and (min-width: 1100px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    .header {
+        background-image: url("img/background_desktop.png");
+        padding: 30px 150px 0px 150px;
+    }
+    
+    .navbar {
+        background: none;
+        padding: 0px;
+    }
+    
+    .navbar h1 {
+        color: #FFFFFF;
+    }
+    
+    .nav_icons{
+        display: none;
+    }
+    
+    .nav_list {
+        float: left;
+        margin-top: 96px;
+        margin-left: 90px;
+        display: inline;
+        margin-top: 0px;
+        text-align: left;
+    }
+    
+    .nav_list li {
+        display: inline;
+        margin-right: 21px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+    }
+    
+    .nav_list li a {
+        color: #FFFFFF;
+    }
+
+    .quote_navbar {
+        display: inline;
+        float: right;
+        padding: 15px 25px;
+        background: #23A6F0;
+        border-radius: 5px;
+        border: #23A6F0;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+    }
+
+    /************* Intro section************/
+    .intro_section {
+        border: 2px solid purple;
+        padding-bottom: 45px;
+        width: 100%;
+    }
+
+    .intro_content_box {
+        float: left;
+        /* border: 2px solid purple; */
+        width: 509px;
+        margin-top: 231px;
+        text-align: left;
+        padding: 0;
+    }
+    
+    .intro_section h1 {
+        text-align: left;
+        /* border: 2px solid red; */
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 80px;
+        padding: 0px;
+    }
+    
+    .intro_content {
+        /* border: 2px solid blue; */
+        text-align: left;
+        margin: 35px 0px 0px 0px;
+        width: 376px;
+        height: 60px;
+    }
+    
+    .blue_button {
+        margin: 35px 10px 0px 0px;
+        padding: 10px 30px 10px 30px;
+    }
+    
+    .transparent_button {
+        margin-bottom: 80px;
+    }
+    
+    .book_appointment {
+        float: right;
+        margin-top: -550px;
+        margin-left: 250px;
+    }
+
+    /********** Services Section *********/  
+    .section_text {
+        width: 40%;
+        margin: 10px auto 50px auto;
+    }
+    
+    .services_box_section {
+        margin: 0 auto 80px auto;
+    }
+
+    .services_box {
+        float: left;
+        margin: 20px;
+    }
+    
+    /********** Feedback Section *********/
+    .feedback_section_text {
+        width: 40%;
+        margin: 10px auto 50px auto;
+    }
+    
+    .feedback_box_section {
+        margin: 0px auto;
+    }
+
+    .feedback_box {
+        float: left;
+        width: 327px;
+        margin: 10px;
+
+    }
+
+    /********** FAQ Section *********/
+    .faq_section {
+        margin-top: -100px;
+    }
+    .faq_all_boxes {
+        margin: 80px auto;
+    }
+    
+    .faq_box_section1 {
+        float: left;
+    }
+
+    .faq_box {
+        margin-right: 10px;
+        margin-left: 10px;
+
+    }
+
+    .faq_box_text_mobile {
+        display: none;
+    }
+    
+    .faq_box_text_desktop {
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #737373;
+        text-align: left;
+    }
+    
+    /********** Newsletter Section *********/
+    .newsletter_section {
+        width: 100%;
+        padding: 99px 196px 140px 195px; 
+    }
+    
+    .newsletter_text {
+        display: none;
+    }
+    
+    .newsletter_content_desktop {
+        float: left;
+        display: block;
+    }
+
+    .newsletter_content_title{
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 57px;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+        text-align: left;
+    }
+
+    .newsletter_content_text {
+        text-align: left;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;        
+    }
+
+    .subscribe_email_box {
+        float: right;
+        margin-top: -80px;
+    }
+    
+    .footer {
+        padding: 80px 200px 80px 197px;
+    }
+
+    .footer_content {
+        width: 100%;
+    }
+    
+    .connect_section {
+        float: left;
+    }
+    
+    .footer_info_section {
+        float: right;
+        margin-top: -190px;
+    }
+
+    .footer_info {
+        float: left;
+        margin-right: 50px;
+    }
 }
