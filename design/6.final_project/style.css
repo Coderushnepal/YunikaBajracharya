@@ -491,7 +491,7 @@ button:hover {
 
 /**************** Desktop View ****************/
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1150px) {
     .container {
         max-width: 1440px;
     }
@@ -552,7 +552,7 @@ button:hover {
 
     /************* Intro section************/
     .intro_section {
-        border: 2px solid purple;
+        /* border: 2px solid purple; */
         padding-bottom: 45px;
         width: 100%;
     }
@@ -594,8 +594,7 @@ button:hover {
     
     .book_appointment {
         float: right;
-        margin-top: -550px;
-        margin-left: 250px;
+        margin-top: 80px;
     }
 
     /********** Services Section *********/  
@@ -631,9 +630,6 @@ button:hover {
     }
 
     /********** FAQ Section *********/
-    .faq_section {
-        margin-top: -100px;
-    }
     .faq_all_boxes {
         margin: 80px auto;
     }
@@ -665,7 +661,6 @@ button:hover {
     /********** Newsletter Section *********/
     .newsletter_section {
         width: 100%;
-        padding: 99px 196px 140px 195px; 
     }
     
     .newsletter_text {
@@ -675,6 +670,11 @@ button:hover {
     .newsletter_content_desktop {
         float: left;
         display: block;
+    }
+
+    .getintouch_subscribe {
+        width: 78%;
+        margin: auto;
     }
 
     .newsletter_content_title{
@@ -697,15 +697,12 @@ button:hover {
 
     .subscribe_email_box {
         float: right;
-        margin-top: -80px;
-    }
-    
-    .footer {
-        padding: 80px 200px 80px 197px;
+        margin-top: -60px;
     }
 
     .footer_content {
-        width: 100%;
+        width: 85%;
+        margin: auto;
     }
     
     .connect_section {
