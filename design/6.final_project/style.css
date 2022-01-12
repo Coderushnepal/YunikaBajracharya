@@ -8,15 +8,15 @@
 }
 
 .container {
-    max-width: 414px;
-    margin: 0 auto;
-    /* border: 2px solid red; */
+    text-align: center;
 }
 
 .header {
     /* border: 2px solid black; */
     width: 100%;
     background-image: url("img/background_mobile.png");
+    background-position: center;
+
 }
 
 .navbar {
@@ -92,6 +92,8 @@ ul {
 }
 
 .intro_section {
+    max-width: 414px;
+    margin: 0 auto;
     /* border: 2px solid orange; */
     padding-bottom: 105px;
 }
@@ -200,6 +202,10 @@ button:hover {
 }
 
 /********** Services Section *********/
+.services_section {
+    padding: 75px 43.5px 92.96px 43.5px;
+}
+
 .section_title {
     margin: 98px 45.5px 10px 45.5px;
     /* border: 2px solid blue; */
@@ -220,10 +226,15 @@ button:hover {
     padding: 0px 25px 0px 25px;
 }
 
+.services_box_section {
+    /* border: 2px solid red; */
+    text-align: center;
+    margin: 0 auto;
+}
+
 .services_box {
-    width: 328px;
-    height: 385px;
-    margin-left: 42px;
+    /* border: 2px solid blue; */
+    max-width: 328px;
     background: #D9EDFF;
     background: #D9EDFF;
     border-radius: 10px;
@@ -277,7 +288,7 @@ button:hover {
     color: #114563;
 }
 
-/********** Services Section *********/
+/********** Feedback Section *********/
 .feedback_section {
     background: #FAFAFA;
     padding: 75px 43.5px 92.96px 43.5px;
@@ -285,10 +296,6 @@ button:hover {
 
 .feedback_section_title{
     margin: 0px 0px 10px 0px;
-}
-
-.feedback_section_text {
-    margin: 10px 0px 75px 0px;
 }
 
 .feedback_box {
@@ -313,17 +320,30 @@ button:hover {
 
 /********** FAQ Section *********/
 .faq_section {
+    width: 100%;
+    margin: 0 auto;
     background: #FAFAFA;
     padding-bottom: 50px;
     padding-top: 2px;
 }
 
+.faq_all_boxes {
+    /* border: 2px solid red; */
+    text-align: center;
+    margin: 0 auto;
+}
+
 .faq_box {
+    /* border: 2px solid black; */
     background: #FFFFFF;
     border-radius: 9px;  
-    margin: 0px 38px 30px 43px;
-    padding: 25px 3px 25px 30px;
-    width: 333px;
+    padding: 25px 33px 25px 30px;
+    max-width: 333px;
+    margin-bottom: 30px;
+}
+
+.faq_box_section3 {
+    display: none;
 }
 
 .faq_box img {
@@ -362,6 +382,7 @@ button:hover {
 .newsletter_section {
     background: #252B42;
     padding: 90px 38.5px 140px 38.5px; 
+    width: 100%;
 }
 
 .newsletter_text {
@@ -374,16 +395,14 @@ button:hover {
     margin-bottom: 30px;
 }
 
-.subscribe_email_box {
-    text-align: center;
+.getintouch_subscribe {
+    /* border: 2px solid green; */
     margin: auto;
 }
 
 .newsletter_box {
-    padding: 15px 100px 15px 20px;
+    padding: 15px 100px 15px 10px;
     text-align: left;
-    float: left;
-    position: relative;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -393,13 +412,12 @@ button:hover {
 }
 
 .subscribe {
-    float: right;
     background: #23A6F0;
     border-radius: 0px 5px 5px 0px;
     padding: 8.5px 14px;
     position: absolute;
-    margin-left: -100px;
     margin-top: 1px;
+    margin-left: -100px;
     font-weight: normal;
     font-size: 14px;
     line-height: 28px;
@@ -467,7 +485,6 @@ button:hover {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.2px;  
-
 }
 
 .footer_list li a {
@@ -489,21 +506,20 @@ button:hover {
     color: #737373;
 }
 
+
 /**************** Desktop View ****************/
-
 @media only screen and (min-width: 1150px) {
-    .container {
-        max-width: 1440px;
-    }
-
     .header {
         background-image: url("img/background_desktop.png");
         padding: 30px 150px 0px 150px;
     }
     
     .navbar {
+        /* border: 2px solid black; */
+        max-width: 1040px;
         background: none;
         padding: 0px;
+        margin: 0 auto;
     }
     
     .navbar h1 {
@@ -552,9 +568,8 @@ button:hover {
 
     /************* Intro section************/
     .intro_section {
-        /* border: 2px solid purple; */
+        max-width: 1440px;
         padding-bottom: 45px;
-        width: 100%;
     }
 
     .intro_content_box {
@@ -597,19 +612,23 @@ button:hover {
         margin-top: 80px;
     }
 
+    .book_appointment_tablet{
+        display: none;
+    }
+
     /********** Services Section *********/  
     .section_text {
-        width: 40%;
-        margin: 10px auto 50px auto;
+        max-width: 1440px;
+        margin: auto;
     }
     
     .services_box_section {
-        margin: 0 auto 80px auto;
+        margin: 30px auto 0px auto;
     }
 
     .services_box {
         float: left;
-        margin: 20px;
+        margin: 13px;
     }
     
     /********** Feedback Section *********/
@@ -638,10 +657,14 @@ button:hover {
         float: left;
     }
 
+    .faq_box_section3 {
+        display: block;
+        float: left;
+    }
+
     .faq_box {
         margin-right: 10px;
         margin-left: 10px;
-
     }
 
     .faq_box_text_mobile {
@@ -697,7 +720,7 @@ button:hover {
 
     .subscribe_email_box {
         float: right;
-        margin-top: -60px;
+        margin-top: 20px;
     }
 
     .footer_content {
@@ -717,5 +740,234 @@ button:hover {
     .footer_info {
         float: left;
         margin-right: 50px;
+    }
+}
+
+/**************** Tablet View ****************/
+@media only screen and (min-width: 685px) and (max-width: 1149px) {
+    .header {
+        background-image: url("img/background_desktop.png");
+    }
+    
+    .navbar {
+        /* border: 2px solid red; */
+        background: none;
+        padding: 0px;
+        max-width: 650px;
+        margin: 0 auto;
+
+    }
+    
+    .navbar h1 {
+        margin-top: 20px;
+        margin-left: 20px;
+        color: #FFFFFF;
+    }
+    
+    .nav_icons{
+        display: none;
+    }
+    
+    .nav_list {
+        float: right;
+        display: inline;
+        margin-top: 20px;
+    }
+    
+    .nav_list li {
+        display: inline;
+        margin-right: 21px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+    }
+    
+    .nav_list li a {
+        color: #FFFFFF;
+    }
+
+    .quote_navbar {
+        display: none;
+    }
+
+    /************* Intro section************/
+    .intro_section {
+        /* border: 2px solid purple; */
+        padding-bottom: 45px;
+        max-width: 650px;
+
+    }
+
+    .intro_content_box {
+        float: left;
+        /* border: 2px solid yellow; */
+        /* width: 309px; */
+        width: 50%;
+        margin-top: 231px;
+        margin-left: 20px;
+        text-align: left;
+        padding: 0;
+    }
+    
+    .intro_section h1 {
+        text-align: left;
+        /* border: 2px solid red; */
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 80px;
+        padding: 0px;
+    }
+    
+    .intro_content {
+        /* border: 2px solid blue; */
+        text-align: left;
+        margin: 15px 0px 0px 0px;
+        width: 310px;
+        height: 60px;
+    }
+    
+    .blue_button {
+        margin: 45px 10px 20px 0px;
+        padding: 10px 30px 10px 30px;
+    }
+    
+    .transparent_button {
+        margin-bottom: 80px;
+    }
+
+    .book_appointment {
+        padding: 30px;
+        float: right;
+        margin-top: 200px;
+        margin-right: 20px;
+        width: 250px;
+    }
+    
+    .book_appointment .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .book_appointment_text {
+        font-size: 10px;
+    }
+    
+    .text_box {
+        padding: 5px 10px;
+        margin: 0px 0px 12px 0px;
+        font-size: 10px;
+    }
+    
+    .book_button {
+        font-size: 10px;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+        padding: 7px 40px 7px 40px;
+        margin-top: 10px;
+    }    
+
+    /********** Services Section *********/  
+
+    /********** Feedback Section *********/
+    .feedback_box_section {
+        /* border: 2px solid green; */
+        margin: 30px auto 0px auto;
+    }
+    .feedback_section_text {
+        width: 100%;
+    }
+
+    /********** FAQ Section *********/
+    .faq_all_boxes {
+        margin: 80px auto;
+    }
+    
+    .faq_box_section1 {
+        float: left;
+    }
+
+    .faq_box {
+        margin-right: 15px;
+        margin-left: 15px;
+        width: 100px;
+    }
+
+    .faq_box_text_mobile {
+        display: none;
+    }
+    
+    .faq_box_text_desktop {
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #737373;
+        text-align: left;
+    }
+    
+    /********** Newsletter Section *********/
+    .newsletter_section {
+        width: 100%;
+    }
+
+    .footer_title {
+        font-size: 20px;
+    }
+
+    .footer_info {
+        float: left;
+        margin-right: 28px;
+        margin-top: 25px;
+    }
+
+    .footer_list li {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1149px) {
+    .services_box {
+        float: left;
+        margin: 10px;
+        width: 30%;
+    }
+
+    .services_section {
+        padding: 0px;
+    }
+    
+    .section_text {
+        margin: 10px 46.5px 50px 46.5px;
+    }
+    
+    .services_box_section {
+        /* border: 2px solid red; */
+        text-align: center;
+        margin: 0 auto;
+        width: 95%;
+    }
+    
+    .services_box_title {
+        height: 114px;
+    }
+    
+    .services_box_title img {
+        width: 50px;
+        margin: 40px 10px 0px 20px;
+        float: left;
+    }
+    
+    .services_box_title span {
+        font-size: 14px;
+    }
+    
+    .services_box_text {
+        padding: 10px 10px 10px 0px;
+    }
+    
+    .services_box_text ul li {
+        font-size: 12px;
     }
 }
