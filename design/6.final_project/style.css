@@ -98,7 +98,7 @@ ul {
     padding-bottom: 105px;
 }
 
-.intro_section h1 {
+.intro_section h2 {
     color: white;
     font-weight: bold;
     font-size: 40px;
@@ -574,14 +574,13 @@ button:hover {
 
     .intro_content_box {
         float: left;
-        /* border: 2px solid purple; */
-        width: 509px;
+        /* border: 2px solid #800080; */
+        width: 61%;
         margin-top: 231px;
         text-align: left;
-        padding: 0;
     }
     
-    .intro_section h1 {
+    .intro_section h2 {
         text-align: left;
         /* border: 2px solid red; */
         font-weight: 800;
@@ -724,7 +723,7 @@ button:hover {
     }
 
     .footer_content {
-        width: 85%;
+        width: 83%;
         margin: auto;
     }
     
@@ -810,7 +809,7 @@ button:hover {
         padding: 0;
     }
     
-    .intro_section h1 {
+    .intro_section h2 {
         text-align: left;
         /* border: 2px solid red; */
         font-weight: 800;
@@ -866,8 +865,6 @@ button:hover {
         padding: 7px 40px 7px 40px;
         margin-top: 10px;
     }    
-
-    /********** Services Section *********/  
 
     /********** Feedback Section *********/
     .feedback_box_section {
