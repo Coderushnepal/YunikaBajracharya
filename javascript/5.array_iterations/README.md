@@ -43,6 +43,7 @@ Convert the list of names in array of object like:
 
 Given the result of the above problem, create a function which takes a character and prints the count of first names which starts with letter that letter and which donot start with given letter.
 <br/>
+
 <b>Example</b>
 
 ```
