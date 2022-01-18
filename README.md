@@ -15,3 +15,4 @@
 3. Arrays [`Code`](/javascript/3.arrays/)
 4. Basic JavaScript [`Code`](/javascript/4.basic_javascript/)
 5. Array Iterations [`Code`](/javascript/5.array_iterations/)
+6. Password field using DOM [`Code`](/javascript/6.password_field_using_DOM/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/javascript/6.password_field_using_DOM/)
