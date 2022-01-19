@@ -19,6 +19,9 @@ password.style.padding = "15px";
 password.style.width = "90.6%";
 password.style.marginBottom = "10px";
 password.style.borderRadius = "4px";
+password.addEventListener("click", function(event) {
+    // event.target.style.backgroundColor = "blue";
+})
 
 // create show password
 var showPassword = document.createElement("input");
@@ -55,6 +58,9 @@ forgotPassword.addEventListener('mouseover', function(event) {
 forgotPassword.addEventListener('mouseout', function(event) {
     forgotPassword.style.color = "#1b64da";
 })
+forgotPassword.addEventListener('click', function(event) {
+    password.value = "";
+})
 
 // create next button
 var next = document.createElement("button");
@@ -72,4 +78,14 @@ next.addEventListener('mouseover', function(event) {
 })
 next.addEventListener('mouseout', function(event) {
     next.style.backgroundColor = "#1b64da";
+})
+next.addEventListener('click', function(event) {
+    if (password.value != "") {
+        if (password.value.length > 8) {
+            console.log("successful!");
+        }
+        else {
+            alert("Password should be at least 8 characters long!");
+        }
+    }
 })
