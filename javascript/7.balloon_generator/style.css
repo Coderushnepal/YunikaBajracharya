@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    background-color: #FAD4D2;
+}
+
+.hippoImg {
+    display: block;
+    margin: 0px auto;
+    width: 250px;
+}
+
+button {
+    width: 150px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    background-color: #F2789F;
+    border-color: #F2789F;
+}
+
+.balloonBox {
+    border: 2px solid pink;
+    width: 800px;
+    height: 600px;
+    margin: 20px auto;
+    position: relative;
+    padding: 15px;
+}
+
+.girlImg {
+    width: 350px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
