@@ -2,7 +2,7 @@
 *Here is the list of assignments I did during the fellowship:*
 
 ## Design
-1. Design Thinking [`Demo`](/design/1.design_thinking/design_thinking.pdf)
+1. [Design Thinking](/design/1.design_thinking/design_thinking.pdf)
 2. [Newspaper Layout](design/2.newspaper/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/design/2.newspaper/)
 3. [Email Template](design/3.email_template/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/design/3.email_template/)
 4. [Understanding Float and Clear](design/4.float_clear/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/design/4.float_clear/)
