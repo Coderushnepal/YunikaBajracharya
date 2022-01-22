@@ -17,3 +17,4 @@
 5. [Array Iterations](/javascript/5.array_iterations/)
 6. [Password field using DOM](/javascript/6.password_field_using_DOM/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/javascript/6.password_field_using_DOM/)
 7. [Balloon Generater](/javascript/7.balloon_generator/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/javascript/7.balloon_generator/)
+8. [Form Validator](/javascript/8.form_validator/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/javascript/8.form_validator/)
