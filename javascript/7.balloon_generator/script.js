@@ -11,6 +11,11 @@ var balloonBox = document.createElement("div");
 document.body.append(balloonBox);
 balloonBox.className = "balloonBox";
 
+function generateRandomColor() {
+    var myRandomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    return myRandomColor;
+}
+
 button.addEventListener('click', function(event) {
     var balloons = document.createElement("div");
     balloonBox.append(balloons);
@@ -19,15 +24,10 @@ button.addEventListener('click', function(event) {
     balloons.style.height = "50px";
     balloons.style.width = "50px";
     balloons.style.position = "absolute";
-    balloons.style.top = 550 * Math.random() + "px";
-    balloons.style.left = 750 * Math.random() + "px";
-
-    function generateRandomColor() {
-        var myRandomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-        return myRandomColor;
-    }
     balloons.style.backgroundColor = generateRandomColor();
-    
+    balloons.style.top = (600-50) * Math.random() + "px";
+    balloons.style.left = (800-50) * Math.random() + "px";
+  
     var girlImg = document.createElement("img");
     girlImg.setAttribute("src", "img/balloon.png");
     document.body.append(girlImg);
