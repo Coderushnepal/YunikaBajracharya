@@ -1,3 +1,3 @@
 ## Responsive Website Design
 
-### [**`Click here for Demo`**](https://coderushnepal.github.io/YunikaBajracharya/javascript/5.lemburs_website/)
+### [**`Click here for Demo`**](https://coderushnepal.github.io/YunikaBajracharya/design/5.lemburs_website/)
