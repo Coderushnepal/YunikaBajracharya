@@ -52,8 +52,10 @@ ball.addEventListener("click", function (event) {
             console.log(wrapper.clientWidth, ball.clientHeight);
             direction *= -1;
         }
-        if (parseInt(newLeft) <= 0) {
+        if(parseInt(newLeft) <= 0) {
             direction = 1;
         }
     }, 1000 / 60);
 });
+
+// ball.clientHeight == parseInt(ball.style.height)
