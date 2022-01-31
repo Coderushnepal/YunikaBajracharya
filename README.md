@@ -20,3 +20,5 @@
 8. [Form Validator](/javascript/08.form_validator/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/javascript/08.form_validator/)
 9. [Hangman](/javascript/09.hangman/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/javascript/09.hangman/)
 10. [Ball Animation](/javascript/10.ball_animation/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/javascript/10.ball_animation/)
+11. [Multiple Ball Bounce using OOP](/javascript/11.ball_bounce_OOP/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/javascript/11.ball_bounce_OOP/)
+12. [Expense Tracker](/javascript/12.expense_tracker/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/javascript/12.expense_tracker/)
