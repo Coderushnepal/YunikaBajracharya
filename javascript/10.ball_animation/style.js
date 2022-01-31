@@ -35,25 +35,27 @@ ball.innerHTML = "click";
 
 ball.addEventListener("click", function (event) {
     ball.innerHTML = "";
-    var direction = 1;
+    var directionTop = 1;
+    var directionLeft = 1;
+
     var interval = setInterval(function() {
-        var newTop = parseInt(event.target.style.top) + 5 * direction + "px";
+        var newTop = parseInt(event.target.style.top) + 5 * directionTop + "px";
         event.target.style.top = newTop;
         if(parseInt(newTop) >= wrapper.clientHeight - ball.clientHeight) {
-            direction *= -1;
+            directionTop *= -1;
         }
         if (parseInt(newTop) <= 0) {
-            direction = 1;
+            directionTop = 1;
         }
 
-        var newLeft = parseInt(event.target.style.left) + 5 * direction + "px";
+        var newLeft = parseInt(event.target.style.left) + 5 * directionLeft + "px";
         event.target.style.left = newLeft;
         if(parseInt(newLeft) >= wrapper.clientWidth - ball.clientWidth) {
             console.log(wrapper.clientWidth, ball.clientHeight);
-            direction *= -1;
+            directionLeft *= -1;
         }
         if(parseInt(newLeft) <= 0) {
-            direction = 1;
+            directionLeft = 1;
         }
     }, 1000 / 60);
 });
