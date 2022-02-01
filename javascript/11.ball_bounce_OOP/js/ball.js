@@ -18,6 +18,7 @@ function Ball(size, id) {
         this.element.style.left = position.left + "px";
     
         this.element.addEventListener("click", function (event) {
+            event.target.style.background = "gold";
             console.log(this.id);
             var direction = 1;
             var interval = setInterval(function() {
