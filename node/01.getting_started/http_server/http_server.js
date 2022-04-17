@@ -1,15 +1,15 @@
 // A simple HTTP server using NodeJS
 
-import http from 'http';
-// const http = require('http'); -> older format
+const http = require('http');
 
-// this callback is asynchronous
 const server = http.createServer((request, response) => {
-    response.end(`<h1>This is my first http server in NodeJS</h1>\n`);
+    console.log(request);
+    // send response body
+    response.end('My first http server in NodeJS\n');
 });
 
-const PORT = 8000;
+const PORT = 8848;
 
 server.listen(PORT);
 
-console.log(`Server running at http://127.0.0.1:${PORT}/`);
+console.log(`server running at: http://127.0.0.1:${PORT}/`);

@@ -1,14 +1,23 @@
-import http from 'http';
 import fs from 'fs';
+import http from 'http';
 
-http.createServer((request, response) => {
-    try {
-        const file = fs.readFileSync('sample_text.txt');
-        response.end(file.toString());
-    }
-    catch (err) {
-        console.log("An error occured: ", err.message);
-    }
-}).listen(1234);
+const server = http.createServer((request, response) => {
+try {
+    const file = fs.readFileSync('sample.txt');
 
-console.log(`Server at http://127.0.0.1:1234/`);
+    const newfile = file.toString().split(' ').join('-'); // buffer -> string type
+
+    // send the response body
+    response.end(newfile);
+} 
+catch (err) {
+    console.log('Error reading file', err.message);
+}
+
+});
+
+const PORT = 8848;
+
+server.listen(PORT);
+
+console.log(`server running at: http://127.0.0.1:${PORT}/`); 
