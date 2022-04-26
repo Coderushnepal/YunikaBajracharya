@@ -30,3 +30,4 @@
 3. [Express Intro](/node/03.express_intro)
 4. [Using Middlewares](/node/04.using_middlewares)
 5. [Basic CRUD Operations](/node/05.basic_crud_operations)
+6. [diskDB CRUD Operations](/node/06.disk_db_crud_operations)
