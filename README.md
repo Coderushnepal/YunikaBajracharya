@@ -31,3 +31,4 @@
 4. [Using Middlewares](/node/04.using_middlewares)
 5. [Basic CRUD Operations](/node/05.basic_crud_operations)
 6. [diskDB CRUD Operations](/node/06.disk_db_crud_operations)
+7. [Proper Folder Structure](/node/07.proper_folder_structure)
