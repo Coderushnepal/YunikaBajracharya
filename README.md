@@ -32,3 +32,4 @@
 5. [Basic CRUD Operations](/node/05.basic_crud_operations)
 6. [diskDB CRUD Operations](/node/06.disk_db_crud_operations)
 7. [Proper Folder Structure](/node/07.proper_folder_structure)
+8. [Stocks API](/node/08.stocks_api)

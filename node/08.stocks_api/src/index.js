@@ -15,6 +15,10 @@ dotenv.config();
 app.use(serveFavicon('./public/favicon.ico'));
 
 app.use(helmet());
+/*
+const helmet() = () => (req, res, next) => { }
+const controller = (req, res, next) => { }
+*/
 app.use(morgan('common'));
 app.use(bodyParser.json());
 app.use(routes);
