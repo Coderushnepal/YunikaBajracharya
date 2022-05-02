@@ -3,7 +3,7 @@ import addStockSchema from './schemas/addStock.js';
 import * as apiController from './controllers/api.js';
 import * as stockController from './controllers/stock.js';
 import getStocksQuerySchema from './schemas/getStocksQuery.js';
-import {validateBody, validateQueryParams} from './middlewares/validation.js';
+import { validateBody, validateQueryParams } from './middlewares/validation.js';
 
 const router = Router();
 

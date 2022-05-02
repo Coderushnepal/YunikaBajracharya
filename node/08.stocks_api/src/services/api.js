@@ -1,13 +1,13 @@
 import fs from 'fs';
 
 export function getAPIDetails() {
-    const data = fs.readFileSync(process.cwd() + '/package.json').toString(); // process.cwd gives current path
+  const data = fs.readFileSync(process.cwd() + '/package.json').toString(); // process.cwd gives current path
 
-    const parsedData = JSON.parse(data);
+  const parsedData = JSON.parse(data);
 
-    return {
-        name: parsedData.name,
-        version: parsedData.version,
-        description: parsedData.description,
-    };
+  return {
+    name: parsedData.name,
+    version: parsedData.version,
+    description: parsedData.description,
+  };
 }
