@@ -26,4 +26,3 @@ app.use(routes);
 app.listen(process.env.PORT, () => {
     logger.info(`Listening on http://127.0.0.1:${process.env.PORT}`);
 });
-

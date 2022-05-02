@@ -1,16 +1,21 @@
 import { Router } from 'express';
-import validation from './middlewares/validation.js';
+import addStockSchema from './schemas/addStock.js';
+import * as apiController from './controllers/api.js';
 import * as stockController from './controllers/stock.js';
+import getStocksQuerySchema from './schemas/getStocksQuery.js';
+import {validateBody, validateQueryParams} from './middlewares/validation.js';
 
 const router = Router();
 
-router.post('/stocks', validation, stockController.addStock);
+router.get('/', apiController.getAPIDetails);
 
-router.get('/stocks', stockController.getStocks);
+router.post('/stocks', validateBody(addStockSchema), stockController.addStock);
+
+router.get('/stocks', validateQueryParams(getStocksQuerySchema), stockController.getStocks);
 
 router.get('/stocks/:id', stockController.getStock);
 
-router.put('/stocks/:id', validation,   stockController.updateStock);
+router.put('/stocks/:id', validateBody(addStockSchema), stockController.updateStock);
 
 router.delete('/stocks/:id', stockController.removeStock);
 

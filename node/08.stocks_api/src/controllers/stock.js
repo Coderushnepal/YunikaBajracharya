@@ -1,3 +1,4 @@
+import { query } from 'express';
 import * as stockService from '../services/stock.js';
 
 export function addStock(req, res, next) {
@@ -16,7 +17,7 @@ export function addStock(req, res, next) {
 
 export function getStocks(req, res, next) {
     try {
-        const data = stockService.getAllStocks();
+        const data = stockService.getAllStocks(req.query);
         
         res.json(data);
     } 
@@ -71,3 +72,4 @@ export function removeStock(req, res, next) {
         });
     }
 } 
+

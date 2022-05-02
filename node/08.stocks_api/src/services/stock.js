@@ -21,12 +21,30 @@ export function addStock(params) {
 }
 
 
-export function getAllStocks() {
+export function getAllStocks(query) {
+    const nameFilter = query.name ? query.name.split(',') : []; 
+    const quantityFilter = query.quantity ? query.quantity.split(',') : [];
+    const rateFilter = query.rate ? query.rate.split(',') : [];
+
     logger.info('Fetching a list of stocks');
     const stocks = new Stock().getAll();
+
+    let filteredStocks = stocks;
+
+    if (nameFilter.length) {
+        filteredStocks = stocks.filter(stock => nameFilter.includes(stock.name));
+    }  
+    
+    if (quantityFilter.length) {
+        filteredStocks = stocks.filter(stock => quantityFilter.includes(stock.quantity));
+    }  
+
+    if (rateFilter.length) {
+        filteredStocks = stocks.filter(stock => rateFilter.includes(stock.rate));
+    }  
     
     return {
-        data: stocks,
+        data: filteredStocks,
         message: 'List of stocks',
     }
 }

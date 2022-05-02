@@ -1,4 +1,8 @@
 {
+  "name": "stocks-api",
+  "description": "API service for the CRUD operations on stock database",
+  "version": "0.0.1",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "node src/index.js"
