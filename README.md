@@ -1,7 +1,9 @@
 # Code Like Her Fellowship
-*Here is the list of assignments I did during the fellowship:*
+
+_Here is the list of assignments I did during the fellowship:_
 
 ## Design
+
 1. [Design Thinking](/design/1.design_thinking/design_thinking.pdf)
 2. [Newspaper Layout](design/2.newspaper/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/design/2.newspaper/)
 3. [Email Template](design/3.email_template/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/design/3.email_template/)
@@ -10,6 +12,7 @@
 6. [Design Final Project](design/6.final_project/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/design/6.final_project/)
 
 ## JavaScript
+
 1. [Ability Test](/javascript/01.ability_test/)
 2. [String Manipulation](/javascript/02.string_manipulation/)
 3. [Arrays](/javascript/03.arrays/)
@@ -25,6 +28,7 @@
 13. [Infinite Scroll Blog](/javascript/13.infinite_scroll_blog/) [`Demo`](https://coderushnepal.github.io/YunikaBajracharya/javascript/13.infinite_scroll_blog/)
 
 ## Node.js
+
 1. [Http Server](/node/01.http_server)
 2. [File Server](/node/02.file_server)
 3. [Express Intro](/node/03.express_intro)
@@ -33,3 +37,8 @@
 6. [diskDB CRUD Operations](/node/06.disk_db_crud_operations)
 7. [Proper Folder Structure](/node/07.proper_folder_structure)
 8. [Stocks API](/node/08.stocks_api)
+
+## React.js
+
+- [Made my Portfolio Website](https://github.com/Yunika-Bajracharya/Yunika-Bajracharya.github.io)
+  [`Demo`](https://yunikabajracharya.com.np/)
