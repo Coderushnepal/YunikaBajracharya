@@ -40,5 +40,4 @@ _Here is the list of assignments I did during the fellowship:_
 
 ## React.js
 
-- [Made my Portfolio Website](https://github.com/Yunika-Bajracharya/Yunika-Bajracharya.github.io)
-  [`Demo`](https://yunikabajracharya.com.np/)
+- [Made my Portfolio Website](https://yunikabajracharya.com.np/)
